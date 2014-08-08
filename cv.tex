@@ -1,0 +1,95 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvtheme[blue]{classic}
+\moderncvicons{awesome}
+
+\usepackage[symbol]{footmisc} 						% footnotes.
+\usepackage{cmap}								% поиск в PDF
+\usepackage[T2A]{fontenc}				% кодировка
+\usepackage[utf8]{inputenc}				% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage[unicode]{hyperref}
+\usepackage[scale=0.8]{geometry}
+
+\recomputelengths
+
+\definecolor{linkcolour}{rgb}{0.17,0.36,0.63}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\setlength{\hintscolumnwidth}{3.5cm}
+
+
+\firstname{Евгений}
+\lastname{Чельцов}
+\title{Разработчик}
+\date{\today}
+\email{eugene.cheltsov@icloud.com}
+\address{}{Москва, Россия}
+\mobile{+7 (962) 988-72-29}
+\social[github]{ChillyBwoy}
+\homepage{brainstorage.me/ChillyBwoy}
+%\extrainfo{Разработчик}
+
+\renewcommand{\rmdefault}{cmr} 	% Шрифт с засечками
+\renewcommand{\sfdefault}{cmss} 	% Шрифт без засечек
+\renewcommand{\ttdefault}{cmtt} 	% Моноширинный шрифт
+\renewcommand{\labelitemi}{$\bullet$}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Образование}
+\subsection{Среднее образование}
+\cvline{2001}{Гимназия № 8 им. академика Н.Н.Боголюбова г. Дубны Московской области}
+\subsection{Высшее образование}
+\cventry{2002-2007}{Инженер по специальности «Программное обеспечение вычислительной техники и автоматизированных систем»}{Курский государственный технический университет (ныне Юго-Западный государственный университет)}
+{}
+{}
+{}
+
+\section{Опыт работы}
+\cventry{Окт 2008--по н.в.}{Программист}{Kitty Hug}{Москва}{}{}
+\cvlistitem{Разработал серверный и клиентский код, выполнил вёрстку для проекта \href{http://itsmywine.ru}{itsmywine.ru}. В рамках данного проекта была разработана блог-платформа, которая позволяет создавать и редактировать статьи в режиме WYSIWYG вне зависимости от внешнего вида и поведения блоков, из которых состоит каждый статья. В основе серверной части лежит веб-фреймворк Django, клиентской – JavaScript библиотека React.}
+\cvlistitem{Реализовал ряд проектов на основе фреймворка Django: \href{http://filialmoscow.com}{filialmoscow.com}, \href{http://himeney.ru}{himeney.ru}, \href{http://uratio.ru}{uratio.ru}, \href{http://advokatbarkanov.ru}{advokatbarkanov.ru}\footnotemark[1], \href{http://polepositions.ru}{polepositions.ru}.}
+
+\cvlistitem{Выполнил вёрстку и программирование сайта \href{http://leica-akademie.ru}{leica-akademie.ru}, написал модуль оплаты услуг с использованием API \href{http://www.payonline.ru}{Payonline}.}
+\cvlistitem{Выполнил вёрстку, программирование клиентской и серверной частей сайта \href{http://propagandamoscow.com}{propagandamoscow.com}\footnotemark[1] с использованием веб-фреймворка Django. Работы по интеграции с instagram.}
+\cvlistitem{Разработал приложение \href{https://github.com/ChillyBwoy/django-plugshop}{django-plugshop}, на основе которого в дальнейшем было создано несколько интернет-магазинов, таких как \href{http://deathstar.ru}{deathstar.ru}, \href{http://powerball.ru}{powerball.ru} и др.}
+\cvlistitem{Выполнил работы по вёрстке и программированию клиентской части проектов Связной-клуб, разработал систему автоматизации создания презентаций для внутреннего использования в компании «Связной-Клуб», разработал систему создания обучающих презентаций для внутреннего использования внутри компании «Связной» по стандарту \href{http://ru.wikipedia.org/wiki/SCORM}{SCORM}.}
+\cvlistitem{Выполнил работы по вёрстке и программировнаию сайтов для телеканалов СТС, Домашний и ДТВ.}
+\cvlistitem{Выполнил локализацию сайта \href{http://leica-camera.ru}{leica-camera.ru}.}
+\cvlistitem{Занимался поддержкой и развитием проектов fdoctor.ru и eurodom.ru.}
+\cvlistitem{Занимался поддержкой и разработкой новых модулей сайта ypsilon.ru. Разработал модуль бронирования авиабилетов с использованием \href{http://www.sabretravelnetwork.ru/home/products_services/products/sabre_web_services/}{Sabre® Web Services} и \href{http://www.sirena-travel.ru}{Sirena Travel}, модуль бронирования отелей с использованием систем \href{http://hotelbook.ru}{HotelBook} и \href{http://www.acase.ru}{Академсервис}, модуль бронирования железнодорожных билетов, модуль оплаты с использованием системы \href{http://www.assist.ru}{ASSIST}.}
+
+
+\cventry{Апр 2011--апр 2012}{JavaScript-разработчик}{Nextore}{Москва}{}{}
+\cvlistitem{Принимал участие в проектировании сервиса мониторинга радиоэфира \href{http://dvhb.ru/potokfm}{potok.fm}, занимался разработкой клиентской части сервиса, узнал много нового.}
+\cvlistitem{Выполнил работы по вёрстке и программированию клиентской части \href{http://nextore.ru/projects/3}{интерактивной презентации для МЧС}.}	
+\cvlistitem{В сжатые сроки реализовал прототип сервиса \href{http://dvhb.ru/evomap}{Evomap} с использованием фреймворка Ruby on Rails.}
+
+\cventry{Сен 2007--окт 2008}{Программист}{Kenmore Design Ltd}{Бостон, Массачусетс, США}{удалённая работа}{}
+\cvlistitem{Разработал веб-фреймворк для создания сайтов на языке PHP, который был успешно использован при создании сайтов клиентов компании.}
+\cvlistitem{Разработал CMS на основе Zend Framework.}
+
+\cventry{Май 2005--июн 2007}{3D-художник}{4Reign Studios}{Курск}{}{}
+\cvlistitem{Принимал участие в создании концепции проекта.}
+\cvlistitem{Занимался дизайном уровней, моделированием статичных объектов и персонажей для игр \href{http://ru.akella.com/Game.aspx?id=354}{Dilemma} и \href{http://ru.akella.com/Game.aspx?id=1898}{Dilemma 2}, писал пользовательские утилиты для пакета 3D-моделирования Autodesk 3ds MAX на языке MAXScript.}
+
+\section{Навыки}
+\cvline{Языки программирования}{
+JavaScript/CoffeeScript, Python, Ruby, Clojure, C, Objective-C, C++, bash}
+\cvline{Вёрстка}{CSS/SASS/SCSS (Compass, Bourbon), HTML5}
+\cvline{Базы данных}{MySQL, SQLite}
+\cvline{OS}{OS X, Linux(Debian, CentOS)}
+
+\section{Иностранные языки}
+\cvline{English}{Свободно читаю, могу поддержать разговор.}
+\cvline{Spanish}{Пытаюсь изучать в свободное время.}
+
+\footnotetext[1]{$\uparrow$ $\uparrow$ $\downarrow$ $\downarrow$ $\leftarrow$ $\rightarrow$ $\leftarrow$ $\rightarrow$ b a}
+
+
+\end{document}
+
+
