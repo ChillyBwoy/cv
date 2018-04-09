@@ -1,6 +1,10 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 
-\moderncvtheme[black]{classic}
+% 1 - russian, 2 - english
+\newcommand{\lang}[2]{#1} 
+
+\moderncvtheme{classic}
+\moderncvcolor{black}
 \moderncvicons{awesome}
 
 \usepackage[symbol]{footmisc} % footnotes.
@@ -13,25 +17,37 @@
 
 \recomputelengths
 
-\definecolor{linkcolour}{rgb}{0.17,0.36,0.63}
+\definecolor{linkcolour}{rgb}{0.02,0.27,0.68}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 
 \setlength{\hintscolumnwidth}{3.5cm}
 
-
-\firstname{Евгений}
-\lastname{Чельцов}
-\title{Архитектор программного обеспечения}
+\firstname
+  {\lang
+    {Евгений}
+    {Eugene}}
+\lastname
+  {\lang
+    {Чельцов}
+    {Cheltsov}}
+\title
+  {\lang
+    {Разработчик}
+    {Software Developer}}
 \date{\today}
 \email{chill.icp@gmail.com}
-\address{}{Москва, Россия}
-\mobile{+7 (962) 988-72-29}
+\address
+  {\lang
+    {Москва, Россия}
+    {Moscow, Russia}}
+\phone{+7 (***) ***-**-**}
+\photo[64pt][0.4pt]{avatar}
 \social[github]{ChillyBwoy}
+\social[linkedin][www.linkedin.com/comm/in/chillybwoy]{Eugene Cheltsov}
 
-%\homepage{brainstorage.me/ChillyBwoy}
-%\extrainfo{Разработчик}
+% \extrainfo{Разработчик}
 
-\renewcommand{\rmdefault}{cmr} % Шрифт с засечками
+% \renewcommand{\rmdefault}{cmr} % Шрифт с засечками
 \renewcommand{\sfdefault}{cmss} % Шрифт без засечек
 \renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
 \renewcommand{\labelitemi}{$\bullet$}
@@ -40,54 +56,170 @@
 
 \makecvtitle
 
-\section{Опыт работы}
-\cventry{Дек 2014--по н.в.}{Архитектор программного обеспечения}{Mail.Ru Group}{Москва}{}
-{Разрабатываю фронтенд.}
 
-\cvlistitem{Проектирование и разработка утилит и костылей.\newline}
-\cvlistitem{Проектирование и разработка внутреннего фреймфорка.\newline}
-\cvlistitem{Принимал участие в разработке проектов «\href{https://news.mail.ru}{Новости}», «\href{https://realty.mail.ru}{Недвижимость}», «\href{https://auto.mail.ru}{Авто}», «\href{https://hi-tech.mail.ru}{Hi-Tech}», «\href{https://lady.mail.ru}{Леди}», «\href{https://afisha.mail.ru}{Афиша}».\newline}
 
-\cventry{Окт 2008--дек 2014}{Программист}{Kitty Hug}{Москва}{}{Разрабатывал фронтенд и бэкенд, занимался проектированием. Использовал Django, MySQL и React, писал тесты(иногда).}
+\section
+  {\lang
+    {Опыт работы}
+    {Work Experience}}
+\cventry
+  {2014--\lang
+            {по н.в.}
+            {Present}}
+  {\lang
+    {Архитектор программного обеспечения}
+    {Software Architect}}
+  {Mail.Ru Group}
+  {\lang
+    {Москва}
+    {Moscow}}
+  {}
+  {Занимаюсь проектированием и разработкой инструментов, утилит и библиотек в медиапроектах Mail.Ru.}
+\cvlistitem{Принимал участие в разработке проектов «\href{https://news.mail.ru}{Новости}», «\href{https://realty.mail.ru}{Недвижимость}», «\href{https://auto.mail.ru}{Авто}», «\href{https://hi-tech.mail.ru}{Hi-Tech}», «\href{https://lady.mail.ru}{Леди}», «\href{https://kino.mail.ru}{Кино}».\newline}
 
+\cventry
+  {2008--2014}
+  {\lang
+    {Программист}
+    {Developer}}
+  {Kitty Hug}
+  {\lang
+    {Москва}
+    {Moscow}}
+  {}
+  {Разрабатывал фронтенд и бэкенд, занимался проектированием. Использовал Django, MySQL и React, писал тесты.}
 \cvlistitem{Делал сайты для телеканалов СТС, ДТВ и Домашний, проекта «\href{http://itsmywine.ru}{It's My Wine}», интернет-магазина «Евродом», фотоаппаратов «Leica Camera», «Связного-клуба», сети поликлиник «Семейный Доктор», клуба «\href{http://propagandamoscow.com}{Пропаганда}», кафе «\href{http://filialmoscow.com/ru/}{Filial}» и многих других менее известных клиентов.}
-
 \cvlistitem{Занимался интеграцией с платёжными системами(Assist, Payonline) и системами бронирования(Sabre, Sirena, Hotelbook, Академсервис).}
-
 \cvlistitem{Разработал приложение \href{https://github.com/ChillyBwoy/django-plugshop}{django-plugshop}, на основе которого в дальнейшем было создано несколько интернет-магазинов.\newline}
 
-\cventry{Апр 2011--апр 2012}{JavaScript-разработчик}{Nextore}{Москва}{}{}
+\cventry
+  {2011--2012}
+  {\lang
+    {JavaScript разработчик}
+    {JavaScript Developer}}
+  {Nextore}
+  {\lang
+    {Москва}
+    {Moscow}}
+  {}
+  {}
 \cvlistitem{Принимал участие в проектировании системы мониторинга радиоэфира «\href{http://dvhb.ru/potokfm}{Поток.FM}», занимался разработкой клиентской части сервиса. Использованные технологии: JavaScript(Prototype.js), Ruby(Sinatra), CSS.}
 \cvlistitem{Разработал клиентскую часть интерактивной презентации для \href{http://nextore.ru/projects/3}{МЧС России}. Использованные технологии: Ruby(Sinatra), HAML, SCSS(Compass), CoffeeScript.}
 \cvlistitem{В сжатые сроки реализовал прототип сервиса «\href{http://dvhb.ru/evomap}{Эвомап}» с использованием Ruby on Rails, CoffeeScript, Backbone и SCSS.\newline}
 
-\cventry{Сен 2007--окт 2008}{Программист}{Kenmore Design Ltd}{Бостон, Массачусетс, США}{удалённая работа}{}
+\cventry
+  {2007--2008}
+  {\lang
+    {Программист}
+    {Developer}}
+  {Kenmore Design Ltd}
+  {\lang
+    {Бостон, Массачусетс, США}
+    {Boston, MA, US}}
+  {\lang
+    {удалённая работа}
+    {remote work}}
+  {}
 \cvlistitem{Разработал веб-фреймворк для создания сайтов на языке PHP, который был успешно использован при создании сайтов клиентов компании.}
 \cvlistitem{Разработал CMS на основе Zend Framework.\newline}
 
-\cventry{Май 2005--июн 2007}{3D-художник}{4Reign Studios}{Курск}{}{}
+\cventry
+  {2005--2007}
+  {\lang
+    {3D художник}
+    {3D Artist}}
+  {4Reign Studios}
+  {\lang
+    {Курск}
+    {Kursk}}
+  {}
+  {}
 \cvlistitem{Принимал участие в создании концепции проекта.}
 \cvlistitem{Занимался дизайном уровней, моделированием статичных объектов и персонажей для игр «\href{http://ru.akella.com/Game.aspx?id=354}{Dilemma}» и «\href{http://ru.akella.com/Game.aspx?id=1898}{Dilemma 2}», писал пользовательские утилиты для пакета 3D-моделирования Autodesk 3ds MAX на языке MAXScript.\newline}
 
-\section{Навыки}
-\cvline{В основном}{JavaScript/TypeScript (Vanilla JS, React/Redux, jQuery, Backbone+Marionette), \newline Python (Django, Django REST Framework)}
-\cvline{На досуге}{лениво изучаю Clojure/ClojureScript}
-\cvline{Когда-то давно}{Ruby (Sinatra, Ruby on Rails), bash}
-\cvline{Когда-то давным-давно}{Pascal, C, C\texttt{++}, Delphi, C\texttt{\#}, PHP}
-\cvline{Верстаю}{CSS/SCSS/PostCSS, HTML/bem}
-\cvline{Использую}{Git, vim, Sentry, gulp, webpack}
 
-\section{Образование}
-\subsection{Среднее образование}
-\cvline{2001}{Гимназия № 8 им. академика Н.Н.Боголюбова г. Дубны Московской области\newline}
-\subsection{Высшее образование}
-\cventry{2002-2007}{Инженер по специальности «Программное обеспечение вычислительной техники и автоматизированных систем»}{Курский государственный технический университет (ныне ЮЗГУ Юго-Западный государственный университет)}
-{}
-{}
-{}
 
-\section{Иностранные языки}
-\cvline{English}{Свободно читаю, могу поддержать разговор.}
-\cvline{Español}{B1.}
+\section
+  {\lang
+    {Технические навыки}
+    {Technical Skills}}
+\cvline
+  {Главное}
+  {TypeScript, JavaScript (Vanilla JS, React, Redux, jQuery, Backbone),\newline Python (Django, DRF, Graphene)}
+\cvline
+  {В свободное время}
+  {Clojure/ClojureScript, интересуюсь Rust, Swift и мобильной разработкой}
+\cvline
+  {Когда-то давно}
+  {Delphi, PHP, Ruby (Sinatra, RoR), C, C\texttt{++}, C\texttt{\#}}
+\cvline
+  {Верстаю}
+  {CSS/SCSS/PostCSS, HTML/BEM}
+\cvline
+  {Использую}
+  {Git, gulp, webpack, vim, vscode}
+\cvline
+  {Хочу получить опыт}
+  {разработки коммерческих проектов на Rust}
+
+
+
+\section
+  {\lang
+    {Образование}
+    {Education}}
+\subsection
+  {\lang
+    {Среднее образование}
+    {Secondary school }}
+\cventry
+  {2001}
+  {Гимназия № 8 им. академика Н.Н.Боголюбова}
+  {г. Дубна Московской области}
+  {}
+  {}
+  {}
+\subsection
+  {\lang
+    {Высшее образование}
+    {Higher education}}
+\cventry
+  {2002-2007}
+  {Инженер по специальности «Программное обеспечение вычислительной техники и автоматизированных систем»}
+  {Курский государственный технический университет (ныне ЮЗГУ)}
+  {Курск}
+  {}
+  {}
+
+
+
+\section
+  {\lang
+    {Языки}
+    {Language Skills}}
+\cvlanguage
+  {\lang
+    {Русский}
+    {Russian}}
+  {\lang
+    {родной язык}
+    {Native speaker}}
+  {}
+\cvlanguage
+  {\lang
+    {Английский}
+    {English}}
+  {\lang
+    {читаю техническую литературу, могу поддержать разговор}
+    {Good reading and translating ability}}
+  {}
+\cvlanguage
+  {\lang
+    {Испанский}
+    {Spanish}}
+  {\lang
+    {уровень B1}
+    {Nivel B1}}
+  {}
 
 \end{document}
