@@ -1,26 +1,26 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 
-% 1 - russian, 2 - english
-\newcommand{\lang}[2]{#1}
-
 \moderncvtheme{classic}
-\moderncvcolor{black}
+\moderncvcolor{blue}
 \moderncvicons{awesome}
 
 \usepackage[symbol]{footmisc} % footnotes.
-\usepackage{cmap} % поиск в PDF
 \usepackage[T1,T2A]{fontenc} % кодировка
 \usepackage[utf8]{inputenc} % кодировка исходного текста
 \usepackage[english,russian]{babel} % локализация и переносы
 \usepackage[unicode]{hyperref}
 \usepackage[scale=0.8]{geometry}
 
-\recomputelengths
+%\setlength{\hintscolumnwidth}{3cm}      % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% 1 - russian, 2 - english
+\newcommand{\lang}[2]{#2}
+
+\setlength{\footskip}{66pt}
 
 \definecolor{linkcolour}{rgb}{0.02,0.27,0.68}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-
-\setlength{\hintscolumnwidth}{3.5cm}
 
 \firstname
     {\lang
@@ -30,13 +30,15 @@
 \lastname
     {\lang
         {Чельцов}
-        {Cheltsov}}
+        {Cheltcov}}
+
 \title
     {\lang
         {Разработчик}
-        {Software Developer}}
+        {Senior Front-end Developer}}
+
 \date{\today}
-\email{chill.icp@gmail.com}
+\email{***@***}
 \address
     {\lang
         {Москва, Россия}
@@ -44,33 +46,29 @@
 \phone{+7 (***) ***-**-**}
 % \photo[64pt][0.4pt]{avatar}
 \social[github]{ChillyBwoy}
-\social[linkedin][www.linkedin.com/comm/in/chillybwoy]{Eugene Cheltsov}
+\social[linkedin][www.linkedin.com/comm/in/chillybwoy]{Eugene Cheltcov}
 
 % \extrainfo{Разработчик}
 
 % \renewcommand{\rmdefault}{cmr} % Шрифт с засечками
-\renewcommand{\sfdefault}{cmss} % Шрифт без засечек
-\renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
-\renewcommand{\labelitemi}{$\bullet$}
+% \renewcommand{\sfdefault}{cmss} % Шрифт без засечек
+% \renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
+\renewcommand{\listitemsymbol}{-~}
 
 \begin{document}
 
 \makecvtitle
 
-
 \section
     {\lang
         {Опыт работы}
-        {Work Experience}}
-
+        {Experience}}
 
 \cventry
-    {2018--\lang
-        {по н.в.}
-        {Present}}
+    {\lang{Июл}{Jul} 2018\\\lang{по н.в.}{Present}}
     {\lang
-        {Front-end developer}
-        {Фронтенд разработчик}}
+        {Фронтенд разработчик}
+        {Senior Front-end developer}}
     {SuperJob.ru}
     {\lang
         {Москва}
@@ -78,10 +76,11 @@
     {}
     {\lang
         {Разработка и поддержка сайта компании, создание новых инструментов, утилит и библиотек.}
-        {todo}
+        {Design and development of company superjob.ru, utilities and libraries}}
+
 
 \cventry
-    {2014--2018}
+    {\lang{Дек}{Dec} 2014\\\lang{Июл}{Jul} 2018}
     {\lang
         {Архитектор программного обеспечения}
         {Software Architect}}
@@ -92,16 +91,28 @@
     {}
     {\lang
         {Занимаюсь проектированием и разработкой инструментов, утилит и библиотек в медиапроектах Mail.Ru.}
-        {Design and develop tools, utilities and libraries for Media Projects Mail.Ru}}
+        {Designed and developed various tools, utilities and libraries for Media Projects Mail.Ru}}
+
 
 \cvlistitem
-    {\lang 
+    {\lang
         {Принимал участие в разработке проектов \href{https://news.mail.ru}{news.mail.ru}, \href{https://realty.mail.ru}{realty.mail.ru}, \href{https://auto.mail.ru}{auto.mail.ru}, \href{https://hi-tech.mail.ru}{hi-tech.mail.ru}, \href{https://lady.mail.ru}{lady.mail.ru}, \href{https://kino.mail.ru}{kino.mail.ru}}
-        {Actively participated in development of such projects as \href{https://news.mail.ru}{news.mail.ru}, \href{https://realty.mail.ru}{realty.mail.ru}, \href{https://auto.mail.ru}{auto.mail.ru}, \href{https://hi-tech.mail.ru}{hi-tech.mail.ru}, \href{https://lady.mail.ru}{lady.mail.ru}, \href{https://kino.mail.ru}{kino.mail.ru}}\newline}
+        {Actively participated in development of such projects as \href{https://news.mail.ru}{news.mail.ru}, \href{https://realty.mail.ru}{realty.mail.ru}, \href{https://auto.mail.ru}{auto.mail.ru}, \href{https://hi-tech.mail.ru}{hi-tech.mail.ru}, \href{https://lady.mail.ru}{lady.mail.ru}, \href{https://kino.mail.ru}{kino.mail.ru}}}
 
+\cvlistitem
+    {\lang
+        {Разработал фреймворк для создания клиентских приложений с использованием языка TypeScript}
+        {Developed proprietary client-side framework using TypeScript}}
+
+\cvlistitem
+    {\lang
+        {TODO}
+        {Designed and developed a set of utilities to manage push-notifications for Chrome browser}}
+
+        
 
 \cventry
-    {2008--2014}
+    {\lang{Окт}{Oct} 2008\\\lang{Дек}{Dec} 2014}
     {\lang
         {Программист}
         {Software Developer}}
@@ -127,11 +138,11 @@
 \cvlistitem
     {\lang
         {Разработал приложение \href{https://github.com/ChillyBwoy/django-plugshop}{django-plugshop}, на основе которого в дальнейшем было создано несколько интернет-магазинов, например deathstar.ru и \href{http://powerball.ru}{powerball.ru}}
-        {Design applications ... TODO}\newline}
+        {TODO}}
 
 
 \cventry
-    {2011--2012}
+    {\lang{Июл}{Jul} 2010\\\lang{Дек}{Dec} 2012}
     {\lang
         {Фронтенд разработчик}
         {Front-end developer}}
@@ -141,8 +152,8 @@
         {Moscow}}
     {}
     {\lang
-        {Разработка}
-        {Development}}
+        {Разработка проектов компании}
+        {Development of different projects}}
 
 \cvlistitem
     {\lang
@@ -151,17 +162,17 @@
 
 \cvlistitem
     {\lang
-        {Разработал клиентскую часть интерактивной презентации для \href{http://nextore.ru/projects/3}{МЧС России}. Использованные технологии: Ruby(Sinatra), HAML, SCSS(Compass), CoffeeScript.}
-        {TODO}}
+        {Разработал клиентскую часть интерактивной презентации для \href{http://nextore.ru/projects/3}{МЧС России}. Использованные технологии: Ruby(Sinatra), HAML, SCSS(Compass), CoffeeScript}
+        {Developed client-side of \href{http://nextore.ru/projects/3}{interactive presentation} for Ministry of Emergency Situations using "Sinatra(Ruby)" framework and CoffeeScript language}}
 
 \cvlistitem
     {\lang
-        {В сжатые сроки реализовал прототип сервиса «\href{http://dvhb.ru/evomap}{Эвомап}» с использованием Ruby on Rails, CoffeeScript, Backbone и SCSS.}
-        {TODO}\newline}
+        {В сжатые сроки реализовал прототип сервиса «\href{https://dvhb.ru/evomap}{Эвомап}» с использованием Ruby on Rails, CoffeeScript, Backbone и SCSS}
+        {In deadlines had developed an interactive prototype of geolocation service "\href{https://dvhb.ru/evomap}{Evomap}" using "Ruby on Rails" framework, CoffeeScript language and Backbone framework}}
 
 
 \cventry
-    {2007--2008}
+    {\lang{Окт}{Oct} 2007\\\lang{Окт}{Oct} 2008}
     {\lang
         {Программист}
         {Developer}}
@@ -177,16 +188,15 @@
 \cvlistitem
     {\lang
         {Разработал веб-фреймворк для создания сайтов на языке PHP, который был успешно использован при создании проектов клиентов компании.}
-        {TODO}}
+        {Developed a proprietary web-framework using PHP language, which had been successfully integrated with clients projects}}
 
 \cvlistitem
     {\lang
-        {Разработал CMS на основе Zend Framework.}
-        {TODO}\newline}
-
+        {Разработал CMS на основе Zend Framework(PHP).}
+        {Designed and developed CMS on top of Zend Framework(PHP)}}
 
 \cventry
-    {2005--2007}
+    {\lang{Май}{May} 2005\\\lang{Авг}{Aug} 2007}
     {\lang
         {3D художник}
         {3D Artist}}
@@ -199,14 +209,13 @@
 
 \cvlistitem
     {\lang
-        {Принимал участие в создании концепции проекта.}
-        {TODO}}
+        {Принимал участие в создании концепции проекта}
+        {Participated in creation of game concept}}
 
 \cvlistitem
     {\lang
         {Занимался дизайном уровней, моделированием статичных объектов и персонажей для игр «\href{https://www.igromania.ru/game/3494/Dilemma.html}{Dilemma}» и «\href{https://www.igromania.ru/game/3959/Dilemma_2.html}{Dilemma 2}», писал пользовательские утилиты для пакета 3D-моделирования Autodesk 3ds MAX на языке MAXScript.}
-        {TODO}\newline}
-
+        {Designed game levels, static environment objects and characters for such games as "\href{https://www.igromania.ru/game/3494/Dilemma.html}{Dilemma}" and "\href{https://www.igromania.ru/game/3959/Dilemma_2.html}{Dilemma 2}". Developed automatisation scripts for "Autodesk 3ds Max" using MAXScript language }}
 
 \section
     {\lang
@@ -217,69 +226,43 @@
     {\lang
         {Главное}
         {Main}}
-    {TypeScript, JavaScript (Vanilla JS, React, Redux, jQuery, Backbone),\newline Python (Django, DRF, Graphene)}
+    {TypeScript, JavaScript (Vanilla JS, React, jQuery),\newline Python (Django, DRF, Graphene)}
 
 \cvline
-{\lang
-    {Имею небольшой опыт}
-    {Have some experience}}
-{Clojure, ClojureScript, Swift}
+    {\lang
+        {Использую инструменты и технологии}
+        {Tools and Technologies}}
+    {CSS, PostCSS, SCSS,\newline HTML, BEM,\newline Git, gulp, webpack, bash}
+
+\cvline
+    {\lang
+        {Имею небольшой опыт}
+        {Have some experience}}
+    {Clojure, ClojureScript, Swift}
 
 \cvline
     {\lang
         {В свободное время}
-        {TODO}}
+        {In spare time}}
     {\lang
-        {интересуюсь Rust и Haskell}
-        {Have an interest in Rust and Haskell}}
+        {интересуюсь Rust}
+        {Have an interest in Rust programming language and mobile apps(iOS) development}}
 
 \cvline
     {\lang
-        {Когда-то давно}
-        {TODO}}
-    {Delphi, PHP, Java, Ruby (RoR, Sinatra), C, C\texttt{++}, C\texttt{\#}}
-
-\cvline
-    {\lang
-        {Верстаю}
-        {TODO}}
-    {CSS, PostCSS, SCSS, HTML/BEM}
-
-\cvline
-    {\lang
-        {Использую}
-        {TODO}}
-    {Git, gulp, webpack, vim, vscode}
-
+        {В прошлом}
+        {In the past}}
+    {PHP, Ruby(RoR, Sinatra)}
 
 \section
     {\lang
         {Образование}
         {Education}}
 
-
-\subsection
-    {\lang
-        {Среднее образование}
-        {Secondary school }}
-
-\cventry
-    {2001}
-    {\lang
-        {Гимназия № 8 им. академика Н.Н.Боголюбова}
-        {TODO}}
-    {\lang
-        {г. Дубна Московской области}
-        {Dubna}}
-    {}
-    {}
-    {}
-
-
 \subsection
     {\lang
         {Высшее образование}
-        {Higher Education}}
+        {University}}
 
 \cventry
     {2002-2007}
