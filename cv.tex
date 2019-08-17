@@ -6,11 +6,13 @@
 
 \usepackage[symbol]{footmisc} % footnotes.
 \usepackage[T1,T2A]{fontenc} % кодировка
+\usepackage{blindtext}
 \usepackage[utf8]{inputenc} % кодировка исходного текста
 \usepackage[english,russian]{babel} % локализация и переносы
 \usepackage[unicode]{hyperref}
 \usepackage[scale=0.8]{geometry}
 
+\recomputelengths
 %\setlength{\hintscolumnwidth}{3cm}      % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -37,15 +39,16 @@
         {Разработчик}
         {Senior Front-end Developer}}
 
-\date{\today}
-\email{***@***}
+
+\email{***@***.***}
 \address
     {\lang
         {Москва, Россия}
         {Moscow, Russia}}
-\phone{+7 (***) ***-**-**}
+
+\phone{+7 (***) *** ** **}
 % \photo[64pt][0.4pt]{avatar}
-\social[github]{ChillyBwoy}
+\social[github]{github.com/ChillyBwoy}
 \social[linkedin][www.linkedin.com/comm/in/chillybwoy]{Eugene Cheltcov}
 
 % \extrainfo{Разработчик}
@@ -57,40 +60,85 @@
 
 \begin{document}
 
-\makecvtitle
+\maketitle
+
+\section
+    {\lang
+        {Технические навыки}
+        {Technical Skills}}
+
+\cvline
+    {\lang
+        {Главное}
+        {Main}}
+    {TypeScript, JavaScript, Python}
+
+\cvline
+    {\lang
+        {Использую инструменты и технологии}
+        {Tools and Technologies}}
+    {React, Node.js, jQuery, Flow,{\newline}Django, DRF, Graphene,{\newline}CSS, PostCSS, SCSS, HTML, BEM{\newline}git, gulp, webpack, bash}
+
+\cvline
+    {\lang
+        {Имею небольшой опыт}
+        {Have some experience}}
+    {Clojure, ClojureScript, Swift}
+
+\cvline
+    {\lang
+        {В свободное время}
+        {In spare time}}
+    {\lang
+        {интересуюсь Rust}
+        {Have an interest in Rust programming language and mobile apps(iOS) development}\newline}
+
+\cvline
+    {\lang
+        {В прошлом}
+        {In the past}}
+    {PHP, Ruby(RoR, Sinatra)}
 
 \section
     {\lang
         {Опыт работы}
         {Experience}}
 
+
+
+
+
 \cventry
     {\lang{Июл}{Jul} 2018\\\lang{по н.в.}{Present}}
     {\lang
         {Фронтенд разработчик}
         {Senior Front-end developer}}
-    {SuperJob.ru}
+    {\href{https://superjob.ru}{SuperJob.ru}}
     {\lang
         {Москва}
         {Moscow}}
     {}
     {\lang
         {Разработка и поддержка сайта компании, создание новых инструментов, утилит и библиотек}
-        {Development of the application and the website of the company. Development of new tools, utilities and libraries}\\}
+        {Development of the application and the website of the company. Development of new tools, utilities and libraries}}
 
+\cvlistitem
+    {\lang
+        {Успешно реализовал задачу по интеграции системы тестирования gemini(\href{https://github.com/gemini-testing/gemini}{github.com/gemini-testing/gemini}) используя docker, что позволило проводить тестирование без использования удаленного сервера}
+        {Successfully completed the task of integrating a testing system \href{https://github.com/gemini-testing/gemini}{github.com/gemini-testing/gemini} using docker, which allowed testing without using a remote server}\\}
 
 \cventry
     {\lang{Дек}{Dec} 2014\\\lang{Июл}{Jul} 2018}
     {\lang
         {Архитектор программного обеспечения}
         {Software Architect}}
-    {Mail.Ru Group}
+    {\href{https://corp.mail.ru}{Mail.Ru Group}}
     {\lang
         {Москва}
         {Moscow}}
     {}
     {\lang
-        {Занимаюсь проектированием и разработкой инструментов, утилит и библиотек в медиапроектах Mail.Ru.}
+        {Занимался проектированием и разработкой инструментов, утилит и библиотек в медиапроектах Mail.Ru.}
         {Designed and developed various tools, utilities and libraries for Media Projects Mail.Ru}}
 
 \cvlistitem
@@ -101,12 +149,24 @@
 \cvlistitem
     {\lang
         {Разработал фреймворк для создания клиентских приложений с использованием языка TypeScript}
-        {Developed proprietary client-side framework using TypeScript}}
+        {Developed proprietary client-side framework using TypeScript and integrated it with projects of company}}
 
 \cvlistitem
     {\lang
-        {TODO}
-        {Designed and developed a set of utilities to manage push-notifications for Chrome browser}\\}
+        {TODO ru}
+        {Designed and developed a set of utilities to manage push-notifications for Chrome browser}}
+
+\cvlistitem
+    {\lang
+        {TODO ru}
+        {Took an active part in the development of a design system for Media Projects Mail.Ru, which was used to develop a proprietary publishing system}}
+
+\cvlistitem
+    {\lang
+        {TODO ru}
+        {Developed a set of utilities for error monitoring on most critical projects of Media Projects Mail.Ru}\\}
+
+
 
 
 
@@ -115,7 +175,7 @@
     {\lang
         {Программист}
         {Software Developer}}
-    {Kitty Hug}
+    {\href{http://kittyhug.ru}{Kitty Hug}}
     {\lang
         {Москва}
         {Moscow}}
@@ -126,8 +186,13 @@
 
 \cvlistitem
     {\lang
+        {Разработал приложение \href{https://github.com/ChillyBwoy/django-plugshop}{django-plugshop}, на основе которого в дальнейшем было создано несколько интернет-магазинов, например deathstar.ru и \href{http://powerball.ru}{powerball.ru}}
+        {Developed an application for building online stores(\href{https://github.com/ChillyBwoy/django-plugshop}{github.com/ChillyBwoy/django-plugshop})} and later used it in projects such as \href{http://powerball.ru}{powerball.ru}}
+
+\cvlistitem
+    {\lang
         {Делал сайты для телеканалов СТС, ДТВ и Домашний, интернет-магазина «Евродом», фотоаппаратов «Leica Camera», «Связного-клуба», сети поликлиник «Семейный Доктор», клуба «Пропаганда», кафе «Filial»(\href{http://filialmoscow.com/ru/}{filialmoscow.com}), торгово-офисного центра «Гименей»(\href{http://himeney.ru}{himeney.ru}) и многих других менее известных клиентов}
-        {Developed websites for {\textquotedbl}СТС{\textquotedbl}, {\textquotedbl}ДТВ{\textquotedbl} and {\textquotedbl}Домашний{\textquotedbl} TV channels, online stores of Евродом{\textquotedbl} and {\textquotedbl}Leica Camera{\textquotedbl}, corporate websites of {\textquotedbl}Связной-клуб{\textquotedbl}, network of clinics {\textquotedbl}Семейный Доктор{\textquotedbl}, {\textquotedbl}Propaganda club{\textquotedbl} and many other lesser-known customers}}
+        {Developed websites for {\textquotedbl}СТС{\textquotedbl}, {\textquotedbl}ДТВ{\textquotedbl} and {\textquotedbl}Домашний{\textquotedbl} TV channels, online stores of {\textquotedbl}Евродом{\textquotedbl} and {\textquotedbl}Leica Camera{\textquotedbl}, corporate websites of {\textquotedbl}Связной-клуб{\textquotedbl}, network of clinics {\textquotedbl}Семейный Доктор{\textquotedbl}, {\textquotedbl}Propaganda club{\textquotedbl} and many other lesser-known customers}}
 
 
 \cvlistitem
@@ -139,135 +204,97 @@
 \cvlistitem
     {\lang
         {Занимался интеграцией с платёжными системами Assist и Payonline, системами бронирования авиабилетов Sabre и Sirena, системами бронирования отелей Hotelbook и Академсервис}
-        {Participated in integration with {\textquotedbl}Assist{\textquotedbl} and {\textquotedbl}Payonline{\textquotedbl} payment systems, {\textquotedbl}Saber{\textquotedbl} and {\textquotedbl}Sirena{\textquotedbl} airline reservation systems, {\textquotedbl}Hotelbook{\textquotedbl} and {\textquotedbl}Academservice{\textquotedbl} hotel reservation systems}}
-
-\cvlistitem
-    {\lang
-        {Разработал приложение \href{https://github.com/ChillyBwoy/django-plugshop}{django-plugshop}, на основе которого в дальнейшем было создано несколько интернет-магазинов, например deathstar.ru и \href{http://powerball.ru}{powerball.ru}}
-        {Developed an application for building online stores(\href{https://github.com/ChillyBwoy/django-plugshop}{github.com/ChillyBwoy/django-plugshop})} and later used it in projects such as \href{http://powerball.ru}{powerball.ru}\\}
-
-
-\cventry
-    {\lang{Июл}{Jul} 2010\\\lang{Дек}{Dec} 2012}
-    {\lang
-        {Фронтенд разработчик}
-        {Front-end developer}}
-    {Nextore}
-    {\lang
-        {Москва}
-        {Moscow}}
-    {}
-    {\lang
-        {Разработка проектов компании}
-        {R\&D}}
-
-\cvlistitem
-    {\lang
-        {Принимал участие в проектировании системы мониторинга радиоэфира «Поток.FM»(\href{https://dvhb.ru/potokfm/}{dvhb.ru/potokfm}), занимался разработкой клиентской части сервиса. Использованные технологии: JavaScript(Prototype.js), Ruby(Sinatra), CSS.}
-        {Participated in the development of a broadcast monitoring system. Developed front-end part of the project {\textquotedbl}Potok.FM{\textquotedbl}(\href{https://dvhb.ru/potokfm}{dvhb.ru/potokfm})}}
-
-\cvlistitem
-    {\lang
-        {Разработал клиентскую часть интерактивной презентации для \href{http://nextore.ru/projects/3}{МЧС России}. Использованные технологии: Ruby(Sinatra), HAML, SCSS(Compass), CoffeeScript}
-        {Developed client part of an \href{http://nextore.ru/projects/3}{interactive presentation} for Ministry of Emergency Situations of Russia using Sinatra(Ruby) framework and CoffeeScript language}}
-
-\cvlistitem
-    {\lang
-        {В сжатые сроки реализовал прототип сервиса «\href{https://dvhb.ru/evomap}{Эвомап}» с использованием Ruby on Rails, CoffeeScript, Backbone и SCSS}
-        {In a short time implemented an interactive prototype of geolocation service {\textquotedbl}\href{https://dvhb.ru/evomap}{Evomap}(\href{https://dvhb.ru/evomap}{dvhb.ru/evomap}){\textquotedbl} using Ruby on Rails framework and CoffeeScript language}\\}
-
-
-
-\cventry
-    {\lang{Окт}{Oct} 2007\\\lang{Окт}{Oct} 2008}
-    {\lang
-        {Программист}
-        {Web Developer}}
-    {Kenmore Design Ltd}
-    {\lang
-        {Бостон, Массачусетс, США}
-        {Boston, MA, US}}
-    {\lang
-        {удалённая работа}
-        {Remote work}}
-    {}
-
-\cvlistitem
-    {\lang
-        {Разработал веб-фреймворк для создания сайтов на языке PHP, который был успешно использован при создании проектов клиентов компании.}
-        {Developed a proprietary web-framework using PHP language, which had been successfully integrated with clients projects}}
-
-\cvlistitem
-    {\lang
-        {Разработал CMS на основе Zend Framework(PHP).}
-        {Designed and developed CMS based on Zend Framework(PHP)}\\}
+        {Participated in integration with {\textquotedbl}Assist{\textquotedbl} and {\textquotedbl}Payonline{\textquotedbl} payment systems, {\textquotedbl}Saber{\textquotedbl} and {\textquotedbl}Sirena{\textquotedbl} airline reservation systems, {\textquotedbl}Hotelbook{\textquotedbl} and {\textquotedbl}Academservice{\textquotedbl} hotel reservation systems}\\}
 
 
 
 
-\cventry
-    {\lang{Май}{May} 2005\\\lang{Авг}{Aug} 2007}
-    {\lang
-        {3D художник}
-        {3D Artist}}
-    {4Reign Studios}
-    {\lang
-        {Курск}
-        {Kursk}}
-    {\lang
-        {Частичная занятость}
-        {Part time}}
-    {\lang
-        {Принимал участие в создании концепции проекта}
-        {Participated in the creation of the project concept}}
 
-\cvlistitem
-    {\lang
-        {Занимался дизайном уровней, моделированием статичных объектов и персонажей для игр «\href{https://www.igromania.ru/game/3494/Dilemma.html}{Dilemma}» и «\href{https://www.igromania.ru/game/3959/Dilemma_2.html}{Dilemma 2}»}
-        {Participated in level design, modeling of static objects and characters for games {\textquotedbl}\href{https://www.igromania.ru/game/3494/Dilemma.html}{Dilemma}{\textquotedbl} and {\textquotedbl}\href{https://www.igromania.ru/game/3959/Dilemma_2.html}{Dilemma 2}{\textquotedbl}}}
+%% Nexttore / dvhb
+% \cventry
+%     {\lang{Июл}{Jul} 2010\\\lang{Дек}{Dec} 2012}
+%     {\lang
+%         {Фронтенд разработчик}
+%         {Front-end developer}}
+%     {Nextore}
+%     {\lang
+%         {Москва}
+%         {Moscow}}
+%     {}
+%     {\lang
+%         {Разработка проектов компании}
+%         {R\&D}}
 
-\cvlistitem
-    {\lang
-        {Разрабатывал пользовательские утилиты для пакета 3D-моделирования Autodesk 3ds MAX на языке MAXScript.}
-        {Developed various automatisation scripts for "Autodesk 3ds Max" using MAXScript language}\\}
+% \cvlistitem
+%     {\lang
+%         {Принимал участие в проектировании системы мониторинга радиоэфира «Поток.FM»(\href{https://dvhb.ru/potokfm/}{dvhb.ru/potokfm}), занимался разработкой клиентской части сервиса. Использованные технологии: JavaScript(Prototype.js), Ruby(Sinatra), CSS.}
+%         {Participated in the development of a broadcast monitoring system. Developed client part of the project {\textquotedbl}Potok.FM{\textquotedbl}(\href{https://dvhb.ru/potokfm}{dvhb.ru/potokfm})}}
+
+% \cvlistitem
+%     {\lang
+%         {Разработал клиентскую часть интерактивной презентации для \href{http://nextore.ru/projects/3}{МЧС России}. Использованные технологии: Ruby(Sinatra), HAML, SCSS(Compass), CoffeeScript}
+%         {Developed client part of an \href{http://nextore.ru/projects/3}{interactive presentation} for Ministry of Emergency Situations of Russia using Sinatra(Ruby) framework and CoffeeScript language}}
+
+% \cvlistitem
+%     {\lang
+%         {В сжатые сроки реализовал прототип сервиса «\href{https://dvhb.ru/evomap}{Эвомап}» с использованием Ruby on Rails, CoffeeScript, Backbone и SCSS}
+%         {In a short time implemented an interactive prototype of geolocation service {\textquotedbl}\href{https://dvhb.ru/evomap}{Evomap}(\href{https://dvhb.ru/evomap}{dvhb.ru/evomap}){\textquotedbl} using Ruby on Rails framework and CoffeeScript language}\\}
 
 
-\section
-    {\lang
-        {Технические навыки}
-        {Technical Skills}}
 
-\cvline
-    {\lang
-        {Главное}
-        {Main}}
-    {TypeScript, JavaScript(Vanilla JS, React, jQuery, Flow),\newline Python (Django, DRF, Graphene)\newline}
+% \cventry
+%     {\lang{Окт}{Oct} 2007\\\lang{Окт}{Oct} 2008}
+%     {\lang
+%         {Программист}
+%         {Web Developer}}
+%     {Kenmore Design Ltd}
+%     {\lang
+%         {Бостон, Массачусетс, США}
+%         {Boston, MA, US}}
+%     {\lang
+%         {удалённая работа}
+%         {Remote work}}
+%     {}
 
-\cvline
-    {\lang
-        {Использую инструменты и технологии}
-        {Tools and Technologies}}
-    {CSS, PostCSS, SCSS,\newline HTML, BEM,\newline Git, gulp, webpack, bash\newline}
+% \cvlistitem
+%     {\lang
+%         {Разработал веб-фреймворк для создания сайтов на языке PHP, который был успешно использован при создании проектов клиентов компании.}
+%         {Developed a proprietary web-framework using PHP language, which had been successfully integrated with clients projects}}
 
-\cvline
-    {\lang
-        {Имею небольшой опыт}
-        {Have some experience}}
-    {Clojure, ClojureScript, Swift\newline}
+% \cvlistitem
+%     {\lang
+%         {Разработал CMS на основе Zend Framework(PHP).}
+%         {Designed and developed CMS based on Zend Framework(PHP)}\\}
 
-\cvline
-    {\lang
-        {В свободное время}
-        {In spare time}}
-    {\lang
-        {интересуюсь Rust}
-        {Have an interest in Rust programming language and mobile apps(iOS) development\newline}}
 
-\cvline
-    {\lang
-        {В прошлом}
-        {In the past}}
-    {PHP, Ruby(RoR, Sinatra)}
+
+
+% \cventry
+%     {\lang{Май}{May} 2005\\\lang{Авг}{Aug} 2007}
+%     {\lang
+%         {3D художник}
+%         {3D Artist}}
+%     {4Reign Studios}
+%     {\lang
+%         {Курск}
+%         {Kursk}}
+%     {\lang
+%         {Частичная занятость}
+%         {Part time}}
+%     {\lang
+%         {Принимал участие в создании концепции проекта}
+%         {Participated in the creation of the project concept}}
+
+% \cvlistitem
+%     {\lang
+%         {Занимался дизайном уровней, моделированием статичных объектов и персонажей для игр «\href{https://www.igromania.ru/game/3494/Dilemma.html}{Dilemma}» и «\href{https://www.igromania.ru/game/3959/Dilemma_2.html}{Dilemma 2}»}
+%         {Participated in level design, modeling of static objects and characters for games {\textquotedbl}\href{https://www.igromania.ru/game/3494/Dilemma.html}{Dilemma}{\textquotedbl} and {\textquotedbl}\href{https://www.igromania.ru/game/3959/Dilemma_2.html}{Dilemma 2}{\textquotedbl}}}
+
+% \cvlistitem
+%     {\lang
+%         {Разрабатывал пользовательские утилиты для пакета 3D-моделирования Autodesk 3ds MAX на языке MAXScript.}
+%         {Developed various automatisation scripts for "Autodesk 3ds Max" using MAXScript language}\\}
+
 
 \section
     {\lang
