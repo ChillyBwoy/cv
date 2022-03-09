@@ -1,272 +1,31 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\input{includes/settings.tex}
 
-\moderncvtheme{classic}
-\moderncvcolor{blue}
-\moderncvicons{awesome}
-
-\usepackage[symbol]{footmisc} % footnotes.
-\usepackage[T1,T2A]{fontenc} % кодировка
-\usepackage{blindtext}
-\usepackage[utf8]{inputenc} % кодировка исходного текста
-\usepackage[english,russian]{babel} % локализация и переносы
-\usepackage[unicode]{hyperref}
-\usepackage[scale=0.8]{geometry}
-
-\recomputelengths
-%\setlength{\hintscolumnwidth}{3cm}      % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
-% 1 - russian, 2 - english
-\newcommand{\lang}[2]{#2}
-
-\setlength{\footskip}{66pt}
-
-\definecolor{linkcolour}{rgb}{0.02,0.27,0.68}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-
-\firstname
-	{\lang
-			{Евгений}
-			{Eugene}}
-
-\lastname
-	{\lang
-			{Чельцов}
-			{Cheltcov}}
-
-\title
-	{\lang
-		{Разработчик}
-		{Senior Frontend Developer}}
-
-
-
-\email{chill.icp@gmail.com}
-\address
-	{\lang
-			{Москва, Россия}
-			{Moscow, Russia}}
-\phone{+7 (000) 000 00 00}
-% \photo[64pt][0.4pt]{avatar}
-\social[github]{ChillyBwoy}
-\social[linkedin][linkedin.com/in/chillybwoy/]{Eugene Cheltcov}
+\input{includes/title.tex}
 
 % \extrainfo{Разработчик}
-
-% \renewcommand{\rmdefault}{cmr} % Шрифт с засечками
-% \renewcommand{\sfdefault}{cmss} % Шрифт без засечек
-% \renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
-\renewcommand{\listitemsymbol}{—~}
 
 \begin{document}
 
 \maketitle
 
-\section
-{\lang
-	{Технические навыки}
-	{Technical Skills}}
-
-\cvline
-{\lang
-	{Главное}
-	{Main}}
-{TypeScript, JavaScript, Python}
-
-\cvline
-{\lang
-	{Использую инструменты и технологии}
-	{Tools and Technologies}}
-{React, Node.js, jQuery, Flow{\newline}Django, DRF{\newline}GraphQL, REST{\newline}CSS, PostCSS, SCSS, HTML, BEM{\newline}git, gulp, webpack, bash}
-
-\cvline
-{\lang
-	{Имею небольшой опыт}
-	{Have some experience}}
-{Clojure, ClojureScript, Swift, Ruby(RoR, Sinatra)}
-
-\cvline
-{\lang
-	{В свободное время}
-	{In spare time}}
-{\lang
-	{интересуюсь мобильной разработкой iOS}
-	{Interested in developing mobile applications(Swift/iOS)}}
+\input{includes/skills.tex}
 
 \section
 {\lang
-	{Опыт работы}
-	{Experience}}
+  {Опыт работы}
+  {Experience}
+}
 
+\input{includes/experience_sd.tex}
+\cvline{}{}
+\input{includes/experience_sj.tex}
+\cvline{}{}
+\input{includes/experience_vk.tex}
+\cvline{}{}
+\input{includes/experience_kh.tex}
 
-	\cventry
-		{\lang{Апр}{Apr} 2020\\\lang{по н.в.}{Present}}
-		{\lang
-			{Фронтенд разработчик}
-			{Frontend Teamlead}}
-		{\href{https://sberdevices.ru}{sberdevices.ru}}
-		{\lang
-			{Москва}
-			{Moscow}}
-		{}
-		{\lang
-			{B2B2C}
-			{B2B2C Team}\\}
+\input{includes/education.tex}
 
-
-	\cventry
-		{\lang{Июл}{Jul} 2018\\\lang{Апр}{Apr} 2020}
-		{\lang
-			{Фронтенд разработчик}
-			{Senior Frontend developer}}
-		{\href{https://superjob.ru}{SuperJob.ru}}
-		{\lang
-			{Москва}
-			{Moscow}}
-		{}
-		{\lang
-			{Разработка и поддержка сайта компании, создание новых инструментов, утилит и библиотек}
-			{Development of the application and the website of the company. Development of new tools, utilities and libraries}}
-			
-		\cvlistitem
-		{\lang
-			{Успешно реализовал задачу по интеграции системы тестирования gemini(\href{https://github.com/gemini-testing/gemini}{github.com/gemini-testing/gemini}) используя docker, что позволило проводить тестирование без использования удаленного сервера}
-			{Successfully completed the task of integrating a testing system \href{https://github.com/gemini-testing/gemini}{github.com/gemini-testing/gemini} using docker, which allowed testing without using a remote server}\\}
-
-
-	\cventry
-		{\lang{Дек}{Dec} 2014\\\lang{Июл}{Jul} 2018}
-		{\lang
-			{Архитектор программного обеспечения}
-			{Software Architect(mostly frontend)}}
-		{\href{https://corp.mail.ru}{Mail.Ru Group}}
-		{\lang
-			{Москва}
-			{Moscow}}
-		{}
-		{\lang
-			{Занимался проектированием и разработкой инструментов, утилит и библиотек в медиапроектах Mail.Ru.}
-			{Designed and developed various tools, utilities and libraries for Media Projects Mail.Ru}}
-
-		\cvlistitem
-		{\lang
-			{Принимал участие в разработке проектов \href{https://news.mail.ru}{news.mail.ru}, \href{https://realty.mail.ru}{realty.mail.ru}, \href{https://auto.mail.ru}{auto.mail.ru}, \href{https://hi-tech.mail.ru}{hi-tech.mail.ru}, \href{https://lady.mail.ru}{lady.mail.ru}, \href{https://kino.mail.ru}{kino.mail.ru}}
-			{Actively participated in development of such projects as \href{https://news.mail.ru}{news.mail.ru}, \href{https://realty.mail.ru}{realty.mail.ru}, \href{https://auto.mail.ru}{auto.mail.ru}, \href{https://hi-tech.mail.ru}{hi-tech.mail.ru}, \href{https://lady.mail.ru}{lady.mail.ru}, \href{https://kino.mail.ru}{kino.mail.ru}}}
-
-		\cvlistitem
-		{\lang
-			{Разработал фреймворк для создания клиентских приложений с использованием языка TypeScript}
-			{Developed proprietary client-side framework using TypeScript and integrated it with projects of company}}
-
-		\cvlistitem
-		{\lang
-			{Разработал и внедрил набор утилит для управления push-уведомлениями для браузера Chrome}
-			{Designed and developed a set of utilities to manage push-notifications for Chrome browser}}
-
-		\cvlistitem
-		{\lang
-			{Принимал участие в разработке дизайн-системы для медийных проектов mail.ru, на основе которой была создана система для разработки новых проектов компании}
-			{Took an active part in the development of a design system for Media Projects Mail.Ru, which was used to develop a proprietary publishing system}}
-
-		\cvlistitem
-		{\lang
-			{Разработал систему прототипирования и отладки клиентской части проектов на локальном компьютере без подключения к удаленному серверу}
-			{Developed a system for prototyping and debugging client-side projects on a local computer without connecting to a remote server}}
-
-		\cvlistitem
-		{\lang
-			{Разработал и внедрил систему мониторинга критических ошибок на высоконагруженных проектах компании}
-			{Developed a set of utilities for error monitoring on most critical projects of Media Projects Mail.Ru}\\}
-
-
-	\cventry
-		{\lang{Окт}{Oct} 2008\\\lang{Дек}{Dec} 2014}
-		{\lang
-			{Программист}
-			{Software Developer}}
-		{\href{http://kittyhug.ru}{Kitty Hug}}
-		{\lang
-			{Москва}
-			{Moscow}}
-		{}
-		{\lang
-			{Занимался разработкой и проектированием как серверной, так и клиентской части проектов компании. Использовал Django, Django-CMS, Tornado, MySQL, JQuery и React, занимался написанием юнит-тестов.}
-			{Designed and developed both server and client parts of company's projects. Used such tools as Django web framework, Django-CMS, Tornado, MySQL, JQuery and React}}
-
-		\cvlistitem
-		{\lang
-			{Разработал приложение \href{https://github.com/ChillyBwoy/django-plugshop}{django-plugshop}, на основе к��торого в дальнейшем было созд��но не��колько интернет-магазинов, например deathstar.ru и \href{http://powerball.ru}{powerball.ru}}
-			{Developed an application for building online stores(\href{https://github.com/ChillyBwoy/django-plugshop}{github.com/ChillyBwoy/django-plugshop})} and later used it in projects such as \href{http://powerball.ru}{powerball.ru}}
-
-		\cvlistitem
-		{\lang
-			{Делал сайты для телеканалов СТС, ДТВ и Домашний, интернет-магазина «Евродом», фотоаппаратов «Leica Camera», «Связного-клуба», сети поликлиник «Семейный Доктор», клуба «Пропаганда», кафе «Filial»(\href{http://filialmoscow.com/ru/}{filialmoscow.com}), торгово-офисного центра «Гименей»(\href{http://himeney.ru}{himeney.ru}) и многих других менее известных клиентов}
-			{Developed websites for {\textquotedbl}СТС{\textquotedbl}, {\textquotedbl}ДТВ{\textquotedbl} and {\textquotedbl}Домашний{\textquotedbl} TV channels, online stores of {\textquotedbl}Евродом{\textquotedbl} and {\textquotedbl}Leica Camera{\textquotedbl}, corporate websites of {\textquotedbl}Связной-клуб{\textquotedbl}, network of clinics {\textquotedbl}Семейный Доктор{\textquotedbl}, {\textquotedbl}Propaganda club{\textquotedbl} and many other lesser-known customers}}
-
-		\cvlistitem
-		{\lang
-			{Разработал интерактивную издательскую платформу для тематического блога «It's My Wine»(\href{http://itsmywine.ru}{itsmywine.ru})}
-			{Developed interactive platform for the thematic blog {\textquotedbl}It's My Wine{\textquotedbl}(\href{http://itsmywine.ru}{itsmywine.ru}) using Django framework(Python), React and CoffeeScript language}}
-
-		\cvlistitem
-		{\lang
-			{Занимался интеграцией с платёжными системами Assist и Payonline, системами бронирования авиабилетов Sabre и Sirena, системами бронирования отелей Hotelbook и Академсервис}
-			{Participated in integration with {\textquotedbl}Assist{\textquotedbl} and {\textquotedbl}Payonline{\textquotedbl} payment systems, {\textquotedbl}Saber{\textquotedbl} and {\textquotedbl}Sirena{\textquotedbl} airline reservation systems, {\textquotedbl}Hotelbook{\textquotedbl} and {\textquotedbl}Academservice{\textquotedbl} hotel reservation systems}\\}
-
-\section
-	{\lang
-		{Образование}
-		{Education}}
-
-	\subsection
-	{\lang
-		{Высшее образование}
-		{University}}
-
-		\cventry
-			{2002-2007}
-			{\lang
-				{Инженер по специальности «Программное обеспечение вычислительной техники и автоматизированных систем»}
-				{Software of Computer Equipment and Automated Systems(230501)}}
-			{\lang
-				{«Юго-Западный государственный университет» (бывший «Курский государственный технический университет»)}
-				{South-West State University (former "Kursk State Technical University")}}
-			{\lang
-				{Курск}
-				{Kursk}}
-			{}
-			{}
-
-	\section
-	{\lang
-		{Языки}
-		{Language Skills}}
-
-		\cvlanguage
-		{\lang
-			{Русский}
-			{Russian}}
-		{\lang
-			{родной язык}
-			{Native speaker}}
-		{}
-
-		\cvlanguage
-		{\lang
-			{Английский}
-			{English}}
-		{\lang
-			{технический, разговорный}
-			{Professional Working Proficiency}}
-		{}
-
-		\cvlanguage
-		{\lang
-			{Испанский}
-			{Spanish}}
-		{\lang
-			{уровень B1}
-			{Nivel B1}}
-		{}
+\input{includes/languages.tex}
 
 \end{document}
