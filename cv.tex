@@ -1,28 +1,49 @@
-\input{includes/settings.tex}
+\documentclass[sans]{moderncv}
 
-\input{includes/title.tex}
+\moderncvtheme[blue]{classic}
+
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3.5cm}
+\setlength{\footskip}{66pt}
+
+\recomputelengths
+
+\usepackage[english]{babel}
+\usepackage[unicode]{hyperref}
+
+\usepackage{chemmacros}
+\usepackage{enumerate}
+\usepackage{fontawesome5}
+
+\renewcommand{\listitemsymbol}{–~}
+
+\title{Software Engineer}
+\firstname{Eugene}
+\familyname{Cheltsov}
+\address{Tokyo, Japan}
+
+\email{chill.icp@gmail.com}
+
+\social[linkedin][linkedin.com/in/chillybwoy/]{Eugene Cheltsov}
+\social[github]{ChillyBwoy}
 
 \begin{document}
 
-\maketitle
+\makecvtitle
 
-\input{includes/skills.tex}
+\input{sections/skills.tex}
 
-\section
-{Experience}
 
-\input{includes/experience_rakuten.tex}
-\cvline{}{}
-\input{includes/experience_sberdevices.tex}
-\cvline{}{}
-\input{includes/experience_superjob.tex}
-\cvline{}{}
-\input{includes/experience_vk.tex}
-\cvline{}{}
-\input{includes/experience_kittyhug.tex}
+\section{\faBriefcase{} Working Experience}
 
-\input{includes/education.tex}
+\input{sections/experience/2023-now_restar-inc.tex}
+\input{sections/experience/2022-2023_rakuten.tex}
+\input{sections/experience/2020-2022_sberdevices.tex}
+\input{sections/experience/2018-2020_superjob.tex}
+\input{sections/experience/2014-2018_vk.tex}
+\input{sections/experience/2008-2014_kittyhug.tex}
 
-\input{includes/languages.tex}
+\input{sections/education.tex}
+\input{sections/languages.tex}
 
 \end{document}
